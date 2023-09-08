@@ -8,7 +8,12 @@
    calcularAreaTriangulo(5, 8); // Debería devolver 20.
 */
 
-function calcularAreaTriangulo() {}
+  function calcularAreaTriangulo(base, altura) {
+    return (base * altura) / 2;
+  }
+  
+  
+
 
 
 /* Ejercicio 2: Calcular la Suma de Dígitos
@@ -21,7 +26,14 @@ function calcularAreaTriangulo() {}
     sumarDigitos(12345); // Debería devolver 15 (1 + 2 + 3 + 4 + 5).
 */
 
-function sumarDigitos() {}
+function sumarDigitos(numero) {
+  let suma = 0;
+  console.log (numero > 0) {
+    suma += numero % 10;
+    numero = Math.floor(numero / 10);
+  }
+  return suma;
+}
 
 
 /* Ejercicio 3: Cantidad de letras en una cadena
@@ -34,7 +46,15 @@ function sumarDigitos() {}
    contarVocales(""); // Debería devolver 0
 */
 
-function contarLetras() {}
+function contarLetras(cadena) {
+  let cantidad = 0;
+  for (let i = 0; i < cadena.length; i++) {
+    if (cadena[i] !== ' ') {
+      cantidad++;
+    }
+  }
+  return cantidad;
+}
 
 
 
@@ -43,4 +63,4 @@ module.exports = {
   calcularAreaTriangulo,
   contarLetras,
   sumarDigitos
-}
+} 
